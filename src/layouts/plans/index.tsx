@@ -1,11 +1,6 @@
 'use client'
 
-import {
-  CalendarIcon,
-  CheckIcon,
-  PlusIcon,
-  UsersIcon,
-} from '@heroicons/react/24/solid'
+import { CheckIcon } from '@heroicons/react/24/solid'
 
 export default function Plans() {
   // const features = [
