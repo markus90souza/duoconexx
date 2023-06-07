@@ -2,7 +2,7 @@
 
 import { CheckIcon } from '@heroicons/react/24/solid'
 
-export default function Plans() {
+export function Plans() {
   // const features = [
   //   {
   //     name: 'List view',
@@ -93,13 +93,13 @@ export default function Plans() {
       <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
         <div className="sm:flex sm:flex-col sm:align-center">
           <h1 className="text-5xl font-extrabold text-gray-900 sm:text-center">
-            Pricing Plans
+            Planos e Preços
           </h1>
           <p className="mt-5 text-xl text-gray-500 sm:text-center">
             Start building for free, then add a site plan to go live. Account
             plans unlock additional features.
           </p>
-          <div className="relative self-center mt-6 bg-gray-100 rounded-lg p-0.5 flex sm:mt-8">
+          {/* <div className="relative self-center mt-6 bg-gray-100 rounded-lg p-0.5 flex sm:mt-8">
             <button
               type="button"
               className="relative w-1/2 bg-white border-gray-200 rounded-md shadow-sm py-2 text-sm font-medium text-gray-900 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:z-10 sm:w-auto sm:px-8"
@@ -112,7 +112,7 @@ export default function Plans() {
             >
               Yearly billing
             </button>
-          </div>
+          </div> */}
         </div>
         <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
           {tiers.map((tier) => (

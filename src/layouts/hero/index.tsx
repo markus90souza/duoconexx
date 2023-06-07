@@ -1,7 +1,7 @@
 import { ChevronRightIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 
-export default function Hero() {
+export function Hero() {
   return (
     <div className="pt-10 bg-gray-900 min-h-[80vh] sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
       <div className="mx-auto max-w-7xl lg:px-8">
