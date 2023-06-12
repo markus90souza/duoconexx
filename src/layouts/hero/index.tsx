@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export function Hero() {
   return (
-    <div className="pt-10 bg-gray-900 min-h-[80vh] sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
+    <div className="pt-10 bg-[#22253f] min-h-[80vh] sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
       <div className="mx-auto max-w-7xl lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8">
           <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
@@ -23,7 +23,7 @@ export function Hero() {
               </a>
               <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-4xl lg:mt-6 xl:text-4xl">
                 <span className="block">Duo Conexx</span>
-                <span className="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 sm:pb-5">
+                <span className="pb-3 block text-4xl bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 sm:pb-5">
                   um sistema de confirmação de agendamentos inteligente
                 </span>
               </h1>

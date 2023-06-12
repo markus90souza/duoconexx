@@ -56,18 +56,18 @@ import { ContactUS } from '@/layouts/contact-us'
 //   },
 // ]
 
-export default function Landpage() {
+export default function Home() {
   return (
     <div className="bg-white">
       <div className="relative overflow-hidden">
         <Header />
         <main>
-          <Hero />
+          {/* <Hero /> */}
           {/* Feature section with screenshot */}
 
           {/* AboutUs  */}
 
-          <AboutUs />
+          {/* <AboutUs /> */}
 
           {/* Feature section with grid */}
           {/* <div className="relative bg-white py-16 sm:py-24 lg:py-32">
@@ -167,10 +167,10 @@ export default function Landpage() {
           {/* <BlogPosts /> */}
 
           {/* Plans */}
-          <Plans />
+          {/* <Plans /> */}
 
           {/* ContactUs */}
-          <ContactUS />
+          {/* <ContactUS /> */}
 
           {/* <div className="relative bg-gray-900">
             <div className="relative h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">

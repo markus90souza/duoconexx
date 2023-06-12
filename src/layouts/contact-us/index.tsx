@@ -1,6 +1,6 @@
 export const ContactUS = () => {
   return (
-    <div className="min-h-[80vh] w-full relative">
+    <div className="min-h-[80vh] w-full relative" id="contact-us">
       <div className="w-full flex items-center justify-center my-12">
         <div className="top-40 bg-white shadow rounded py-12 lg:px-28 px-8">
           <p className="md:text-3xl text-xl font-bold leading-7 text-center text-gray-700">

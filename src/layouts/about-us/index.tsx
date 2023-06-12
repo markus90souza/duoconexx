@@ -1,8 +1,6 @@
-import React from 'react'
-
 export const AboutUs = () => {
   return (
-    <div>
+    <div id="about-us">
       <div className="2xl:mx-auto 2xl:container 2xl:px-20 px-6 ">
         <div className="flex md:flex-row flex-col-reverse md:items-stretch items-center justify-center">
           <div className="md:py-20 xl:w-1/2 sm:w-1/2 lg:mr-20 md:mr-6 flex flex-col md:items-end items-center justify-center xl:mr-28">
@@ -140,8 +138,9 @@ export const AboutUs = () => {
                   </svg>
                 </div>
                 <p className="text-base leading-6 mt-6 text-center text-gray-600 sm:w-96 w-full">
-                  Whether article spirits new her covered hastily sitting her.
-                  Money witty
+                  Desenvolvemos soluções de mensageria para facilitar o dia a
+                  dia dos profissionais que trabalham com agendamentos para
+                  aumentar seus lucros
                 </p>
               </div>
               <div className="mt-7 flex flex-col items-center">
@@ -181,8 +180,10 @@ export const AboutUs = () => {
                   </svg>
                 </div>
                 <p className="text-base leading-6 mt-6 text-center text-gray-600 sm:w-96 w-full">
-                  A phrase is a short selection of words which when put together
-                  create a concept.
+                  Nossas soluções tem como foco a gestão eficiente de mensagens
+                  de confirmação de agendamentos , lembretes e reagendamentos.
+                  Tudo de forma automática via Whatsapp para que você tenha mais
+                  tempo para focar no que realmente importa.
                 </p>
               </div>
             </div>

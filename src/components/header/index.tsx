@@ -1,135 +1,114 @@
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import { Bars2Icon as MenuIcon } from '@heroicons/react/24/outline'
+import Link from 'next/link'
+import { Popover } from '@headlessui/react'
+import { AnimatePresence, motion } from 'framer-motion'
 
-import { X } from 'lucide-react'
+import { Button } from '@/components/button'
+import { Container } from '@/components/container'
+import { NavLinks } from '@/components/nav-links'
 import Image from 'next/image'
 
-const navigation = [
-  { name: 'Nossa solução', href: '#' },
-  { name: 'Quem Somos', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Fale conosco', href: '#' },
-]
-export const Header = () => {
-  return (
-    <Popover as="header" className="relative">
-      <div className="bg-gray-900 pt-6">
-        <nav
-          className="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
-          aria-label="Global"
-        >
-          <div className="flex items-center flex-1 justify-between">
-            <div className="flex items-center justify-between w-full md:w-auto">
-              <a href="#">
-                <span className="sr-only">Workflow</span>
-                <Image
-                  width={40}
-                  height={40}
-                  className="h-8 w-auto sm:h-10"
-                  src="https://tailwindui.com/img/logos/workflow-mark-teal-200-cyan-400.svg"
-                  alt=""
-                />
-              </a>
-              <div className="-mr-2 flex items-center md:hidden">
-                <Popover.Button className="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white">
-                  <span className="sr-only">Open main menu</span>
-                  <MenuIcon className="h-6 w-6" aria-hidden="true" />
-                </Popover.Button>
-              </div>
-            </div>
-            <div className="hidden space-x-8 md:flex md:ml-10">
-              {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-base font-medium text-white hover:text-gray-300"
-                >
-                  {item.name}
-                </a>
-              ))}
-            </div>
-          </div>
-          {/* <div className="hidden md:flex md:items-center md:space-x-6">
-            <a
-              href="#"
-              className="text-base font-medium text-white hover:text-gray-300"
-            >
-              Log in
-            </a>
-            <a
-              href="#"
-              className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700"
-            >
-              Start free trial
-            </a>
-          </div> */}
-        </nav>
-      </div>
+import logo from '@/assets/duoconexx.svg'
 
-      <Transition
-        as={Fragment}
-        enter="duration-150 ease-out"
-        enterFrom="opacity-0 scale-95"
-        enterTo="opacity-100 scale-100"
-        leave="duration-100 ease-in"
-        leaveFrom="opacity-100 scale-100"
-        leaveTo="opacity-0 scale-95"
-      >
-        <Popover.Panel
-          focus
-          className="absolute top-0 inset-x-0 p-2 transition transform origin-top md:hidden"
-        >
-          <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
-            <div className="px-5 pt-4 flex items-center justify-between">
-              <div>
-                <Image
-                  width={40}
-                  height={40}
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/workflow-mark-teal-500-cyan-600.svg"
-                  alt=""
-                />
-              </div>
-              <div className="-mr-2">
-                <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-600">
-                  <span className="sr-only">Close menu</span>
-                  <X className="h-6 w-6" aria-hidden="true" />
-                </Popover.Button>
-              </div>
-            </div>
-            <div className="pt-5 pb-6">
-              <div className="px-2 space-y-1">
-                {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
-                  >
-                    {item.name}
-                  </a>
-                ))}
-              </div>
-              <div className="mt-6 px-5">
-                <a
-                  href="#"
-                  className="block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700"
-                >
-                  Start free trial
-                </a>
-              </div>
-              <div className="mt-6 px-5">
-                <p className="text-center text-base font-medium text-gray-500">
-                  Existing customer?{' '}
-                  <a href="#" className="text-gray-900 hover:underline">
-                    Login
-                  </a>
-                </p>
-              </div>
+import { X, Menu } from 'lucide-react'
+
+function MobileNavLink({ children, ...props }) {
+  return (
+    <Popover.Button
+      as={Link}
+      className="block text-base leading-7 tracking-tight text-gray-700"
+      {...props}
+    >
+      {children}
+    </Popover.Button>
+  )
+}
+
+export function Header() {
+  return (
+    <header>
+      <nav>
+        <Container className="relative z-50 flex justify-between py-8">
+          <div className="relative z-10 flex items-center gap-16">
+            <Link href="/" aria-label="Home">
+              <Image className="h-10 w-auto" src={logo} alt="" />
+            </Link>
+            <div className="hidden lg:flex lg:gap-10">
+              <NavLinks />
             </div>
           </div>
-        </Popover.Panel>
-      </Transition>
-    </Popover>
+          <div className="flex items-center gap-6">
+            <Popover className="lg:hidden">
+              {({ open }) => (
+                <>
+                  <Popover.Button
+                    className="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-gray-900 p-2 hover:bg-gray-200/50 hover:stroke-gray-600 active:stroke-gray-900 [&:not(:focus-visible)]:focus:outline-none"
+                    aria-label="Toggle site navigation"
+                  >
+                    {({ open }) =>
+                      open ? (
+                        <X className="h-6 w-6" />
+                      ) : (
+                        <Menu className="h-6 w-6" />
+                      )
+                    }
+                  </Popover.Button>
+                  <AnimatePresence initial={false}>
+                    {open && (
+                      <>
+                        <Popover.Overlay
+                          static
+                          as={motion.div}
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          className="fixed inset-0 z-0 bg-gray-300/60 backdrop-blur"
+                        />
+                        <Popover.Panel
+                          static
+                          as={motion.div}
+                          initial={{ opacity: 0, y: -32 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{
+                            opacity: 0,
+                            y: -32,
+                            transition: { duration: 0.2 },
+                          }}
+                          className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-6 pt-32 shadow-2xl shadow-gray-900/20"
+                        >
+                          <div className="space-y-4">
+                            <MobileNavLink href="#features">
+                              Features
+                            </MobileNavLink>
+                            <MobileNavLink href="#reviews">
+                              Reviews
+                            </MobileNavLink>
+                            <MobileNavLink href="#pricing">
+                              Pricing
+                            </MobileNavLink>
+                            <MobileNavLink href="#faqs">FAQs</MobileNavLink>
+                          </div>
+                          <div className="mt-8 flex flex-col gap-4">
+                            <Button href="/login" variant="outline">
+                              Log in
+                            </Button>
+                            <Button href="#">Download the app</Button>
+                          </div>
+                        </Popover.Panel>
+                      </>
+                    )}
+                  </AnimatePresence>
+                </>
+              )}
+            </Popover>
+            <Button href="/login" variant="outline" className="hidden lg:block">
+              Log in
+            </Button>
+            <Button href="#" className="hidden lg:block">
+              Download
+            </Button>
+          </div>
+        </Container>
+      </nav>
+    </header>
   )
 }

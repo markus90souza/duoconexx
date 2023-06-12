@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { JSX, SVGProps } from 'react'
-
+import logo from '@/assets/duoconexx.svg'
+import { Container } from '../container'
 const footerNavigation = {
   solutions: [
     { name: 'Marketing', href: '#' },
@@ -63,20 +64,15 @@ const footerNavigation = {
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900" aria-labelledby="footer-heading">
+    <footer className="bg-white" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="max-w-md mx-auto pt-12 px-4 sm:max-w-7xl sm:px-6 lg:pt-16 lg:px-8">
+      <Container>
+        {/* <div className="max-w-md mx-auto pt-12 px-4 sm:max-w-7xl sm:px-6 lg:pt-16 lg:px-8"> */}
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
-            <Image
-              className="h-10"
-              width={40}
-              height={40}
-              src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
-              alt="Company name"
-            />
+            <Image className="h-10 w-auto" src={logo} alt="Company name" />
             <p className="text-gray-500 text-base">
               um sistema de confirmação de agendamentos inteligente
             </p>
@@ -174,7 +170,8 @@ const Footer = () => {
             reservados.
           </p>
         </div>
-      </div>
+        {/* </div> */}
+      </Container>
     </footer>
   )
 }
