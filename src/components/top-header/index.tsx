@@ -1,10 +1,10 @@
 import { Container } from '../container'
 import Link from 'next/link'
-import { WhatsappLogo } from '@phosphor-icons/react'
 
+import { WhatsappLogo } from '@phosphor-icons/react'
 import { Facebook, Instagram } from 'lucide-react'
 
-const HeaderHero = () => {
+export const TopHeader = () => {
   return (
     <div className="w-full bg-[#22253f] py-3 relative">
       <Container className="flex items-center justify-between">
@@ -42,5 +42,3 @@ const HeaderHero = () => {
     </div>
   )
 }
-
-export { HeaderHero }
