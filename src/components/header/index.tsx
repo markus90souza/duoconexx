@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Popover } from '@headlessui/react'
 import { AnimatePresence, motion } from 'framer-motion'
 
-import { Button } from '@/components/button'
+// import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { NavLinks } from '@/components/nav-links'
 import Image from 'next/image'
@@ -10,11 +10,16 @@ import Image from 'next/image'
 import logo from '@/assets/duoconexx.svg'
 
 import { X, Menu } from 'lucide-react'
+import { AnchorHTMLAttributes, ReactNode } from 'react'
 
-function MobileNavLink({ children, ...props }) {
+type MobileNavProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
+  children: ReactNode
+}
+function MobileNavLink({ children, href = '', ...props }: MobileNavProps) {
   return (
     <Popover.Button
       as={Link}
+      href={href}
       className="block text-base leading-7 tracking-tight text-gray-700"
       {...props}
     >
@@ -87,12 +92,12 @@ export function Header() {
                             </MobileNavLink>
                             <MobileNavLink href="#faqs">FAQs</MobileNavLink>
                           </div>
-                          <div className="mt-8 flex flex-col gap-4">
+                          {/* <div className="mt-8 flex flex-col gap-4">
                             <Button href="/login" variant="outline">
                               Log in
                             </Button>
                             <Button href="#">Download the app</Button>
-                          </div>
+                          </div> */}
                         </Popover.Panel>
                       </>
                     )}
@@ -100,12 +105,12 @@ export function Header() {
                 </>
               )}
             </Popover>
-            <Button href="/login" variant="outline" className="hidden lg:block">
+            {/* <Button href="/login" variant="outline" className="hidden lg:block">
               Log in
             </Button>
             <Button href="#" className="hidden lg:block">
               Download
-            </Button>
+            </Button> */}
           </div>
         </Container>
       </nav>
