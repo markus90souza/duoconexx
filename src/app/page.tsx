@@ -11,6 +11,7 @@
 
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
+import { HeaderHero } from '@/components/header-hero'
 
 // const features = [
 //   {
@@ -55,6 +56,7 @@ export default function Home() {
   return (
     <div className="bg-white">
       <div className="relative overflow-hidden">
+        <HeaderHero />
         <Header />
         <main>
           {/* <Hero /> */}
