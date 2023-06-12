@@ -11,11 +11,6 @@
 
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
-import { Hero } from '@/layouts/hero'
-
-import { Plans } from '@/layouts/plans'
-import { AboutUs } from '@/layouts/about-us'
-import { ContactUS } from '@/layouts/contact-us'
 
 // const features = [
 //   {
