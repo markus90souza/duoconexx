@@ -12,6 +12,7 @@
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { TopHeader } from '@/components/top-header'
+import { Hero } from '@/layouts/hero'
 
 // const features = [
 //   {
@@ -59,7 +60,7 @@ export default function Home() {
         <TopHeader />
         <Header />
         <main>
-          {/* <Hero /> */}
+          <Hero />
           {/* Feature section with screenshot */}
 
           {/* AboutUs  */}
