@@ -13,6 +13,8 @@ import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { TopHeader } from '@/components/top-header'
 import { Hero } from '@/layouts/hero'
+import { ForClientes } from '@/layouts/for-clients'
+import { FeaturesForClients } from '@/layouts/FeaturesForClients'
 
 // const features = [
 //   {
@@ -61,6 +63,10 @@ export default function Home() {
         <Header />
         <main>
           <Hero />
+
+          <ForClientes />
+
+          <FeaturesForClients />
           {/* Feature section with screenshot */}
 
           {/* AboutUs  */}
