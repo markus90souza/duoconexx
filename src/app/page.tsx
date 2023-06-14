@@ -13,7 +13,7 @@ import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { TopHeader } from '@/components/top-header'
 import { Hero } from '@/layouts/hero'
-import { ForClientes } from '@/layouts/for-clients'
+import { OurClients } from '@/layouts/our-clients'
 import { FeaturesForClients } from '@/layouts/FeaturesForClients'
 
 // const features = [
@@ -64,7 +64,7 @@ export default function Home() {
         <main>
           <Hero />
 
-          <ForClientes />
+          <OurClients />
 
           <FeaturesForClients />
           {/* Feature section with screenshot */}

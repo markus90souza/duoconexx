@@ -1,17 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
-import { Container } from '../../components/container'
+import { Container } from '@/components/container'
 
-export function ForClientes() {
+export const OurClients = () => {
   return (
     <Container>
       <section className="relative flex items-center w-full bg-white">
-        <div className="relative items-center w-full px-5 py-24 mx-auto l">
+        <div className="relative items-center w-full py-4 ">
           <div className="relative flex-col items-start m-auto align-middle">
-            <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
               <div className="relative items-center gap-12 m-auto lg:inline-flex md:order-first">
                 <div className="max-w-xl text-center lg:text-left">
-                  <div>
-                    <p className="text-2xl font-medium tracking-tight text-black sm:text-4xl">
+                  <div className="max-w-sm">
+                    <p className="text-4xl font-bold tracking-tight text-black sm:text-4xl">
                       Aumente a rentabilidade do seu negócio
                     </p>
                     <p className="max-w-xl mt-4 text-base tracking-tight text-gray-600">
@@ -34,14 +34,14 @@ export function ForClientes() {
         </div>
       </section>
 
-      <section className="relative flex items-center w-full bg-white">
-        <div className="relative items-center w-full px-5 py-24 mx-auto ">
+      <section className="relative flex items-center w-full">
+        <div className="relative items-center w-full py-4">
           <div className="relative flex-col items-start m-auto align-middle">
-            <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
               <div className="relative items-center gap-12 m-auto lg:inline-flex">
                 <div className="max-w-xl text-center lg:text-left">
-                  <div>
-                    <p className="text-2xl font-medium tracking-tight text-black sm:text-4xl">
+                  <div className="max-w-sm">
+                    <p className="text-4xl font-bold tracking-tight text-black sm:text-4xl">
                       Aumento da taxa de retorno
                     </p>
                     <p className="max-w-xl mt-4 text-base tracking-tight text-gray-600">
@@ -66,13 +66,13 @@ export function ForClientes() {
       </section>
 
       <section className="relative flex items-center w-full bg-white">
-        <div className="relative items-center w-full px-5 py-24 mx-auto l">
+        <div className="relative items-center w-full py-4">
           <div className="relative flex-col items-start m-auto align-middle">
-            <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
               <div className="relative items-center gap-12 m-auto lg:inline-flex md:order-first">
                 <div className="max-w-xl text-center lg:text-left">
-                  <div>
-                    <p className="text-2xl font-medium tracking-tight text-black sm:text-4xl">
+                  <div className="max-w-sm">
+                    <p className="text-4xl font-bold tracking-tight text-black sm:text-4xl">
                       Melhore o investimento do seu tempo.
                     </p>
                     <p className="max-w-xl mt-4 text-base tracking-tight text-gray-600">
