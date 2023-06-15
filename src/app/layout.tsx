@@ -20,7 +20,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <h1 className="sr-only">Duo Conexx</h1>
+        {children}
+      </body>
     </html>
   )
 }
