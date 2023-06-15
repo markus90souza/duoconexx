@@ -1,165 +1,126 @@
-'use client'
+import { Heading } from '@/components/Heading'
+import { Container } from '@/components/container'
+import { Check } from 'lucide-react'
 
-import { CheckIcon } from '@heroicons/react/24/solid'
+const pricing = {
+  tiers: [
+    {
+      title: 'Freelancer',
+      price: 10,
+      frequency: '/mês',
+      description: 'The essentials to provide your best work for clients.',
+      features: [
+        '5 products',
+        'Up to 1,000 subscribers',
+        'Basic analytics',
+        '48-hour support response time',
+      ],
+      cta: 'Monthly billing',
+      mostPopular: false,
+    },
+    {
+      title: 'Startup',
+      price: 32,
+      frequency: '/mês',
+      description: 'A plan that scales with your rapidly growing business.',
+      features: [
+        '25 products',
+        'Up to 10,000 subscribers',
+        'Advanced analytics',
+        '24-hour support response time',
+        'Marketing automations',
+      ],
+      cta: 'Monthly billing',
+      mostPopular: true,
+    },
+    {
+      title: 'Enterprise',
+      price: 48,
+      frequency: '/mês',
+      description: 'Dedicated support and infrastructure for your company.',
+      features: [
+        'Unlimited products',
+        'Unlimited subscribers',
+        'Advanced analytics',
+        '1-hour, dedicated support response time',
+        'Marketing automations',
+        'Custom integrations',
+      ],
+      cta: 'Adquir Plano',
+      mostPopular: false,
+    },
+  ],
+}
+
+function classNames(...classes: string[]) {
+  return classes.filter(Boolean).join(' ')
+}
 
 export function Plans() {
-  // const features = [
-  //   {
-  //     name: 'List view',
-  //     icon: <ViewListIcon />,
-  //     description:
-  //       'Nunc a, lacinia sed risus neque, arcu, rhoncus. Id mauris justo facilisis aliquam platea vestibulum condimentum morbi.',
-  //   },
-  //   {
-  //     name: 'Boards',
-  //     icon: ViewBoardsIcon,
-  //     description:
-  //       'Purus lobortis volutpat posuere id integer nunc tellus. Non mauris malesuada feugiat massa mi pellentesque cum est. Pharetra a varius urna rhoncus, tempor rutrum.',
-  //   },
-  //   {
-  //     name: 'Calendar',
-  //     icon: <CalendarIcon />,
-  //     description:
-  //       'Purus lobortis volutpat posuere id integer nunc tellus. Non mauris malesuada feugiat massa mi pellentesque cum est. Pharetra a varius urna rhoncus, tempor rutrum.',
-  //   },
-  //   {
-  //     name: 'Teams',
-  //     icon: <UsersIcon />,
-  //     description:
-  //       'Tincidunt sollicitudin interdum nunc sit risus at bibendum vitae. Urna, quam ut sit justo non, consectetur et varius.',
-  //   },
-  // ]
-  // const checklist = [
-  //   'Unlimited projects',
-  //   'No per user fees',
-  //   'Unlimited storage',
-  //   '24/7 support',
-  //   'Cancel any time',
-  //   '14 days free',
-  // ]
-
-  const tiers = [
-    {
-      name: 'Hobby',
-      href: '#',
-      priceMonthly: 12,
-      description: 'All the basics for starting a new business',
-      includedFeatures: [
-        'Potenti felis, in cras at at ligula nunc.',
-        'Orci neque eget pellentesque.',
-      ],
-    },
-    {
-      name: 'Freelancer',
-      href: '#',
-      priceMonthly: 24,
-      description: 'All the basics for starting a new business',
-      includedFeatures: [
-        'Potenti felis, in cras at at ligula nunc. ',
-        'Orci neque eget pellentesque.',
-        'Donec mauris sit in eu tincidunt etiam.',
-      ],
-    },
-    {
-      name: 'Startup',
-      href: '#',
-      priceMonthly: 32,
-      description: 'All the basics for starting a new business',
-      includedFeatures: [
-        'Potenti felis, in cras at at ligula nunc. ',
-        'Orci neque eget pellentesque.',
-        'Donec mauris sit in eu tincidunt etiam.',
-        'Faucibus volutpat magna.',
-      ],
-    },
-    {
-      name: 'Enterprise',
-      href: '#',
-      priceMonthly: 48,
-      description: 'All the basics for starting a new business',
-      includedFeatures: [
-        'Potenti felis, in cras at at ligula nunc. ',
-        'Orci neque eget pellentesque.',
-        'Donec mauris sit in eu tincidunt etiam.',
-        'Faucibus volutpat magna.',
-        'Id sed tellus in varius quisque.',
-        'Risus egestas faucibus.',
-        'Risus cursus ullamcorper.',
-      ],
-    },
-  ]
   return (
-    <div className="bg-white">
-      <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
-        <div className="sm:flex sm:flex-col sm:align-center">
-          <h1 className="text-5xl font-extrabold text-gray-900 sm:text-center">
-            Planos e Preços
-          </h1>
-          <p className="mt-5 text-xl text-gray-500 sm:text-center">
-            Start building for free, then add a site plan to go live. Account
-            plans unlock additional features.
-          </p>
-          {/* <div className="relative self-center mt-6 bg-gray-100 rounded-lg p-0.5 flex sm:mt-8">
-            <button
-              type="button"
-              className="relative w-1/2 bg-white border-gray-200 rounded-md shadow-sm py-2 text-sm font-medium text-gray-900 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:z-10 sm:w-auto sm:px-8"
-            >
-              Monthly billing
-            </button>
-            <button
-              type="button"
-              className="ml-0.5 relative w-1/2 border border-transparent rounded-md py-2 text-sm font-medium text-gray-700 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:z-10 sm:w-auto sm:px-8"
-            >
-              Yearly billing
-            </button>
-          </div> */}
-        </div>
-        <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
-          {tiers.map((tier) => (
+    <section>
+      <Container>
+        <Heading
+          title="Planos e Preços"
+          subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit,
+        modi est"
+        />
+
+        {/* Tiers */}
+        <div className="mt-24 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8">
+          {pricing.tiers.map((tier) => (
             <div
-              key={tier.name}
-              className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200"
+              key={tier.title}
+              className="relative p-8 bg-white border border-gray-900 rounded-2xl shadow-sm flex flex-col"
             >
-              <div className="p-6">
-                <h2 className="text-lg leading-6 font-medium text-gray-900">
-                  {tier.name}
-                </h2>
-                <p className="mt-4 text-sm text-gray-500">{tier.description}</p>
-                <p className="mt-8">
-                  <span className="text-4xl font-extrabold text-gray-900">
-                    ${tier.priceMonthly}
-                  </span>{' '}
-                  <span className="text-base font-medium text-gray-500">
-                    /mo
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold text-gray-900">
+                  {tier.title}
+                </h3>
+                {tier.mostPopular ? (
+                  <p className="absolute top-0 py-1.5 px-4 bg-indigo-500 rounded-full text-xs font-semibold uppercase tracking-wide text-white transform -translate-y-1/2">
+                    Mais Popular
+                  </p>
+                ) : null}
+                <p className="mt-4 flex items-baseline text-gray-900">
+                  <span className="text-5xl font-extrabold tracking-tight">
+                    R$ {tier.price}
+                  </span>
+                  <span className="ml-1 text-xl font-semibold">
+                    {tier.frequency}
                   </span>
                 </p>
-                <a
-                  href={tier.href}
-                  className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
-                >
-                  Buy {tier.name}
-                </a>
-              </div>
-              <div className="pt-6 pb-8 px-6">
-                <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">
-                  Whats included
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {tier.includedFeatures.map((feature) => (
-                    <li key={feature} className="flex space-x-3">
-                      <CheckIcon
-                        className="flex-shrink-0 h-5 w-5 text-green-500"
+                <p className="mt-6 text-gray-500">{tier.description}</p>
+
+                {/* Feature list */}
+                <ul role="list" className="mt-6 space-y-6">
+                  {tier.features.map((feature) => (
+                    <li key={feature} className="flex">
+                      <Check
+                        className="flex-shrink-0 w-6 h-6 text-indigo-500"
                         aria-hidden="true"
                       />
-                      <span className="text-sm text-gray-500">{feature}</span>
+                      <span className="ml-3 text-gray-500">{feature}</span>
                     </li>
                   ))}
                 </ul>
               </div>
+
+              <a
+                href="#"
+                className={classNames(
+                  tier.mostPopular
+                    ? 'bg-indigo-500 text-white hover:bg-indigo-600'
+                    : 'bg-indigo-50 text-indigo-700 hover:bg-indigo-100',
+                  'mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium',
+                )}
+              >
+                {tier.cta}
+              </a>
             </div>
           ))}
         </div>
-      </div>
-    </div>
+      </Container>
+    </section>
   )
 }

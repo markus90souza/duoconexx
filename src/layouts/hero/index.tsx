@@ -6,7 +6,7 @@ import hero from '@/assets/hero.png'
 
 export function Hero() {
   return (
-    <div className="pt-10 bg-[#22253f] min-h-[40vh] items-center  sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
+    <div className="pt-10 bg-[#22253f] min-h-[40vh] items-center sm:h-[70vh]  sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
       <Container>
         <div className="flex flex-col flex-1 gap-y-6 sm:flex-row gap-x-8">
           <div className="relative max-w-xl">

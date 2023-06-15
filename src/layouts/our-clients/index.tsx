@@ -1,11 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
+import { Heading } from '@/components/Heading'
 import { Container } from '@/components/container'
 
 export const OurClients = () => {
   return (
     <section className="w-full">
       <Container>
-        <header className="max-w-full flex items-center flex-col py-6 sm:py-10 text-center ">
+        <Heading
+          title=" Nossa solução para seu négocio"
+          subtitle="  confirmação automática, antecipada e no mesmo dia. Nossa solução
+        reduzira 50% a chance do seu cliente cancelar em cima da hora e de
+        sua agenda ficar vazia."
+        />
+        {/* <header className="max-w-full flex items-center flex-col py-6 sm:py-10 text-center ">
           <h2 className="text-5xl font-bold tracking-tight text-black sm:text-4xl">
             Nossa solução para seu négocio
           </h2>
@@ -14,7 +21,7 @@ export const OurClients = () => {
             reduzira 50% a chance do seu cliente cancelar em cima da hora e de
             sua agenda ficar vazia.
           </span>
-        </header>
+        </header> */}
         <article className="relative flex items-center w-full bg-white">
           <div className="relative items-center w-full py-4 ">
             <div className="relative flex-col items-start m-auto align-middle">
