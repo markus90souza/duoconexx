@@ -17,6 +17,7 @@ import { OurClients } from '@/layouts/our-clients'
 import { FeaturesForClients } from '@/layouts/FeaturesForClients'
 import { AboutUs } from '@/layouts/about-us'
 import { Plans } from '@/layouts/plans'
+import { CTA } from '@/layouts/Cta'
 
 const features = [
   {
@@ -62,6 +63,7 @@ export default function Home() {
           <AboutUs />
           <OurClients />
           <FeaturesForClients />
+          <CTA />
           {/* Feature section with screenshot */}
           {/* AboutUs  */}
           {/* <AboutUs /> */}
