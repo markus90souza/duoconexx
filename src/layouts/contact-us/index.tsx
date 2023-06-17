@@ -1,37 +1,37 @@
 export const ContactUS = () => {
   return (
-    <div className="min-h-[80vh] w-full relative" id="contact-us">
-      <div className="w-full flex items-center justify-center my-12">
-        <div className="top-40 bg-white shadow rounded py-12 lg:px-28 px-8">
-          <p className="md:text-3xl text-xl font-bold leading-7 text-center text-gray-700">
+    <div className="relative min-h-[80vh] w-full" id="contact-us">
+      <div className="my-12 flex w-full items-center justify-center">
+        <div className="top-40 rounded bg-white px-8 py-12 shadow lg:px-28">
+          <p className="text-center text-xl font-bold leading-7 text-gray-700 md:text-3xl">
             Let’s chat and get a quote!
           </p>
-          <div className="md:flex items-center mt-12">
-            <div className="md:w-72 flex flex-col">
+          <div className="mt-12 items-center md:flex">
+            <div className="flex flex-col md:w-72">
               <label className="text-base font-semibold leading-none text-gray-800">
                 Name
               </label>
               <input
                 tabIndex={0}
                 type="name"
-                className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
+                className="focus:oultine-none mt-4 rounded border border-gray-200 bg-gray-100 p-3 text-base leading-none text-gray-900 placeholder-gray-100 focus:border-indigo-700"
                 placeholder="Please input  name"
               />
             </div>
-            <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
+            <div className="mt-4 flex flex-col md:ml-6 md:mt-0 md:w-72">
               <label className="text-base font-semibold leading-none text-gray-800">
                 Email Address
               </label>
               <input
                 tabIndex={0}
                 type="name"
-                className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
+                className="focus:oultine-none mt-4 rounded border border-gray-200 bg-gray-100 p-3 text-base leading-none text-gray-900 placeholder-gray-100 focus:border-indigo-700"
                 placeholder="Please input email address"
               />
             </div>
           </div>
-          <div className="md:flex items-center mt-8">
-            <div className="md:w-72 flex flex-col">
+          <div className="mt-8 items-center md:flex">
+            <div className="flex flex-col md:w-72">
               <label className="text-base font-semibold leading-none text-gray-800">
                 Company name
               </label>
@@ -39,24 +39,24 @@ export const ContactUS = () => {
                 tabIndex={0}
                 role="input"
                 type="name"
-                className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 "
+                className="focus:oultine-none mt-4 rounded border border-gray-200 bg-gray-100 p-3 text-base leading-none text-gray-900 placeholder-gray-100 focus:border-indigo-700 "
                 placeholder="Please input company name"
               />
             </div>
-            <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
+            <div className="mt-4 flex flex-col md:ml-6 md:mt-0 md:w-72">
               <label className="text-base font-semibold leading-none text-gray-800">
                 Country
               </label>
               <input
                 tabIndex={0}
                 type="name"
-                className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
+                className="focus:oultine-none mt-4 rounded border border-gray-200 bg-gray-100 p-3 text-base leading-none text-gray-900 placeholder-gray-100 focus:border-indigo-700"
                 placeholder="Please input country name"
               />
             </div>
           </div>
           <div>
-            <div className="w-full flex flex-col mt-8">
+            <div className="mt-8 flex w-full flex-col">
               <label className="text-base font-semibold leading-none text-gray-800">
                 Message
               </label>
@@ -64,17 +64,17 @@ export const ContactUS = () => {
                 tabIndex={0}
                 aria-label="leave a message"
                 role="textbox"
-                className="h-36 text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 resize-none"
+                className="focus:oultine-none mt-4 h-36 resize-none rounded border border-gray-200 bg-gray-100 p-3 text-base leading-none text-gray-900 placeholder-gray-100 focus:border-indigo-700"
                 defaultValue={''}
               />
             </div>
           </div>
-          <p className="text-xs leading-3 text-gray-600 mt-4">
+          <p className="mt-4 text-xs leading-3 text-gray-600">
             By clicking submit you agree to our terms of service, privacy policy
             and how we use data as stated
           </p>
-          <div className="flex items-center justify-center w-full">
-            <button className="mt-9 text-base font-semibold leading-none text-white py-4 px-10 bg-indigo-700 rounded hover:bg-indigo-600 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:outline-none">
+          <div className="flex w-full items-center justify-center">
+            <button className="mt-9 rounded bg-indigo-700 px-10 py-4 text-base font-semibold leading-none text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2">
               SUBMIT
             </button>
           </div>

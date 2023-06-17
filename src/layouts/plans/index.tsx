@@ -67,18 +67,18 @@ export function Plans() {
         />
 
         {/* Tiers */}
-        <div className="mt-24 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8">
+        <div className="mt-24 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
           {pricing.tiers.map((tier) => (
             <div
               key={tier.title}
-              className="relative p-8 bg-white border border-gray-900 rounded-2xl shadow-sm flex flex-col"
+              className="relative flex flex-col rounded-2xl border border-gray-900 bg-white p-8 shadow-sm"
             >
               <div className="flex-1">
                 <h3 className="text-xl font-semibold text-gray-900">
                   {tier.title}
                 </h3>
                 {tier.mostPopular ? (
-                  <p className="absolute top-0 py-1.5 px-4 bg-indigo-500 rounded-full text-xs font-semibold uppercase tracking-wide text-white transform -translate-y-1/2">
+                  <p className="absolute top-0 -translate-y-1/2 transform rounded-full bg-indigo-500 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-white">
                     Mais Popular
                   </p>
                 ) : null}
@@ -97,7 +97,7 @@ export function Plans() {
                   {tier.features.map((feature) => (
                     <li key={feature} className="flex">
                       <Check
-                        className="flex-shrink-0 w-6 h-6 text-indigo-500"
+                        className="h-6 w-6 flex-shrink-0 text-indigo-500"
                         aria-hidden="true"
                       />
                       <span className="ml-3 text-gray-500">{feature}</span>
@@ -112,7 +112,7 @@ export function Plans() {
                   tier.mostPopular
                     ? 'bg-indigo-500 text-white hover:bg-indigo-600'
                     : 'bg-indigo-50 text-indigo-700 hover:bg-indigo-100',
-                  'mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium',
+                  'mt-8 block w-full rounded-md border border-transparent px-6 py-3 text-center font-medium',
                 )}
               >
                 {tier.cta}

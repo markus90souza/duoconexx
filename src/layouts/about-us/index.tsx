@@ -1,20 +1,20 @@
 export const AboutUs = () => {
   return (
     <div id="about-us">
-      <div className="2xl:mx-auto 2xl:container 2xl:px-20 px-6 ">
-        <div className="flex md:flex-row flex-col-reverse md:items-stretch items-center justify-center">
-          <div className="md:py-20 xl:w-1/2 sm:w-1/2 lg:mr-20 md:mr-6 flex flex-col md:items-end items-center justify-center xl:mr-28">
+      <div className="px-6 2xl:container 2xl:mx-auto 2xl:px-20 ">
+        <div className="flex flex-col-reverse items-center justify-center md:flex-row md:items-stretch">
+          <div className="flex flex-col items-center justify-center sm:w-1/2 md:mr-6 md:items-end md:py-20 lg:mr-20 xl:mr-28 xl:w-1/2">
             <div className="flex flex-col items-center justify-center">
-              <h1 className="md:text-5xl text-3xl font-bold text-center text-gray-800">
+              <h1 className="text-center text-3xl font-bold text-gray-800 md:text-5xl">
                 Wild Goose Chase
               </h1>
-              <p className="sm:w-96 w-full mt-6 text-base leading-6 text-center text-gray-600">
+              <p className="mt-6 w-full text-center text-base leading-6 text-gray-600 sm:w-96">
                 A phrase is a short selection of words which when put together
                 create a concept.
               </p>
-              <div className="md:mt-14 mt-12 flex flex-col items-center">
+              <div className="mt-12 flex flex-col items-center md:mt-14">
                 <div
-                  className="w-20 h-20 bg-white shadow rounded-full flex items-center justify-center"
+                  className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow"
                   role="img"
                   aria-label="money"
                 >
@@ -41,14 +41,14 @@ export const AboutUs = () => {
                     />
                   </svg>
                 </div>
-                <p className="text-base leading-6 mt-6 text-center text-gray-600 sm:w-96 w-full">
+                <p className="mt-6 w-full text-center text-base leading-6 text-gray-600 sm:w-96">
                   A phrase is a short selection of words which when put together
                   create a concept. There are eight types of phrases.
                 </p>
               </div>
               <div className="mt-7 flex flex-col items-center">
                 <div
-                  className="w-20 h-20 bg-white shadow rounded-full flex items-center justify-center"
+                  className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow"
                   role="img"
                   aria-label="phone"
                 >
@@ -82,14 +82,14 @@ export const AboutUs = () => {
                     />
                   </svg>
                 </div>
-                <p className="text-base leading-6 mt-6 text-center text-gray-600 sm:w-96 w-full">
+                <p className="mt-6 w-full text-center text-base leading-6 text-gray-600 sm:w-96">
                   A phrase is a short selection of words which when put together
                   create a concept.
                 </p>
               </div>
               <div className="mt-7 flex flex-col items-center">
                 <div
-                  className="w-20 h-20 bg-white shadow rounded-full flex items-center justify-center"
+                  className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow"
                   role="img"
                   aria-label="ideas"
                 >
@@ -137,7 +137,7 @@ export const AboutUs = () => {
                     />
                   </svg>
                 </div>
-                <p className="text-base leading-6 mt-6 text-center text-gray-600 sm:w-96 w-full">
+                <p className="mt-6 w-full text-center text-base leading-6 text-gray-600 sm:w-96">
                   Desenvolvemos soluções de mensageria para facilitar o dia a
                   dia dos profissionais que trabalham com agendamentos para
                   aumentar seus lucros
@@ -145,7 +145,7 @@ export const AboutUs = () => {
               </div>
               <div className="mt-7 flex flex-col items-center">
                 <div
-                  className="w-20 h-20 bg-white shadow rounded-full flex items-center justify-center"
+                  className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow"
                   role="img"
                   aria-label="bright ideas"
                 >
@@ -179,7 +179,7 @@ export const AboutUs = () => {
                     />
                   </svg>
                 </div>
-                <p className="text-base leading-6 mt-6 text-center text-gray-600 sm:w-96 w-full">
+                <p className="mt-6 w-full text-center text-base leading-6 text-gray-600 sm:w-96">
                   Nossas soluções tem como foco a gestão eficiente de mensagens
                   de confirmação de agendamentos , lembretes e reagendamentos.
                   Tudo de forma automática via Whatsapp para que você tenha mais
@@ -188,16 +188,16 @@ export const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="py-12 xl:w-1/2 lg:w-1/3 sm:w-1/2">
+          <div className="py-12 sm:w-1/2 lg:w-1/3 xl:w-1/2">
             <img
               src="https://i.ibb.co/7SmJNvH/about-image.png"
               alt="image ow a woman studying"
-              className="h-full rounded-md object-cover object-center md:block hidden"
+              className="hidden h-full rounded-md object-cover object-center md:block"
             />
             <img
               src="https://i.ibb.co/NT0VJcd/pexels-la-miko-3681591-1.png"
               alt="image ow a woman studying"
-              className="h-auto w-auto md:hidden block"
+              className="block h-auto w-auto md:hidden"
             />
           </div>
         </div>

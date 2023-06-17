@@ -59,7 +59,7 @@ const footerNavigation = {
 
 const Footer = () => {
   return (
-    <footer className="bg-white py-8" aria-labelledby="footer-heading">
+    <footer className="bg-white pt-8" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -68,7 +68,7 @@ const Footer = () => {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <Image className="h-10 w-auto" src={logo} alt="Company name" />
-            <p className="text-gray-500 text-base">
+            <p className="text-base text-gray-500">
               um sistema de confirmação de agendamentos inteligente
             </p>
             <div className="flex space-x-6">
@@ -88,7 +88,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+          <div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-1 md:gap-8">
               {/* <div>
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
@@ -108,7 +108,7 @@ const Footer = () => {
                 </ul>
               </div> */}
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">
                   Suporte
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
@@ -127,7 +127,7 @@ const Footer = () => {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">
                   A Empresa
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
@@ -144,7 +144,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">
                   Politica de privacidade
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
@@ -163,14 +163,16 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-12 border-t border-gray-200 py-8">
-          <p className="text-base text-gray-400 xl:text-center">
-            &copy; {new Date().getFullYear()} Duo Conexx | Todos os direitos
-            reservados.
-          </p>
-        </div>
+
         {/* </div> */}
       </Container>
+
+      <div className="mt-12 border-t border-gray-200 bg-[#22253f] py-8">
+        <p className="text-base text-gray-400 xl:text-center">
+          &copy; {new Date().getFullYear()} Duo Conexx | Todos os direitos
+          reservados.
+        </p>
+      </div>
     </footer>
   )
 }
