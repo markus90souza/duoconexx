@@ -12,6 +12,8 @@ import { CallToAction } from '@/layouts/call-to-action'
 import { Faqs } from '@/layouts/Faqs'
 import { ContactUS } from '@/layouts/contact-us'
 import { Features } from '@/layouts/Features'
+import { ForCompany } from '@/layouts/for-company'
+import { WhatsAppWidget } from '@/components/Whatsapp-widget'
 
 export default function Home() {
   return (
@@ -28,6 +30,7 @@ export default function Home() {
           {/* Feature section with screenshot */}
           <Features />
           {/* Planos e Preços */}
+          <ForCompany />
           <Plans />
 
           {/* Perguntas e Respostas */}
@@ -37,6 +40,7 @@ export default function Home() {
           <ContactUS />
 
           <Footer />
+          <WhatsAppWidget />
         </main>
       </div>
     </div>

@@ -3,7 +3,7 @@ import { WhatsappLogo } from '@phosphor-icons/react'
 
 export const CallToAction = () => {
   return (
-    <Container>
+    <Container className="py-14 sm:py-32">
       <div className="mb-12 flex items-center justify-center rounded-3xl bg-[#202422]">
         <div className=" flex  max-w-7xl flex-col items-center justify-center gap-5 px-4 py-12 sm:px-6  md:py-16 lg:px-8 lg:py-20">
           <h2 className="flex flex-col items-center gap-4 text-3xl  font-extrabold tracking-tight text-green-400 sm:text-4xl">

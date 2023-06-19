@@ -15,7 +15,7 @@ const pricing = {
         'Basic analytics',
         '48-hour support response time',
       ],
-      cta: 'Monthly billing',
+      cta: 'Saiba mais',
       mostPopular: false,
     },
     {
@@ -30,7 +30,7 @@ const pricing = {
         '24-hour support response time',
         'Marketing automations',
       ],
-      cta: 'Monthly billing',
+      cta: 'Saiba mais',
       mostPopular: true,
     },
     {
@@ -46,7 +46,7 @@ const pricing = {
         'Marketing automations',
         'Custom integrations',
       ],
-      cta: 'Adquir Plano',
+      cta: 'Saiba mais',
       mostPopular: false,
     },
   ],
@@ -56,9 +56,9 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
-export function Plans() {
+export const Plans = () => {
   return (
-    <section className="py-24">
+    <section className="bg-[#22253f] py-24">
       <Container>
         <Heading
           title="TITULO PARA A SEÇÃO"
@@ -72,7 +72,7 @@ export function Plans() {
           {pricing.tiers.map((tier) => (
             <div
               key={tier.title}
-              className="relative flex flex-col rounded-2xl border border-gray-900 bg-white p-8 shadow-sm"
+              className="relative flex flex-col rounded-2xl border bg-white p-8 shadow-sm"
             >
               <div className="flex-1">
                 <h3 className="text-xl font-semibold text-gray-900">

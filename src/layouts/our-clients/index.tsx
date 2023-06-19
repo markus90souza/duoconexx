@@ -4,17 +4,19 @@ import { Container } from '@/components/container'
 
 export const OurClients = () => {
   return (
-    <section className="w-full py-24">
+    <section className="w-full bg-[#22253f] py-24">
       <Container>
-        <Heading
-          title="TITULO PARA A SEÇÃO"
-          subtitle="Chamada pra acão"
-          description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis amet
+        <div className="mb-32">
+          <Heading
+            title="TITULO PARA A SEÇÃO"
+            subtitle="Chamada pra acão"
+            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis amet
             voluptate voluptatem sint, in non vel ea autem saepe"
-        />
+          />
+        </div>
 
-        <article className="relative flex w-full items-center bg-white pt-12">
-          <div className="relative w-full items-center py-4 ">
+        <article className="relative flex w-full items-center">
+          <div className="relative w-full items-center">
             <div className="relative m-auto flex-col items-start align-middle">
               <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
                 <div className="relative m-auto items-center gap-12 md:order-first lg:inline-flex">
@@ -44,7 +46,7 @@ export const OurClients = () => {
         </article>
 
         <article className="relative flex w-full items-center">
-          <div className="relative w-full items-center py-4">
+          <div className="relative w-full items-center">
             <div className="relative m-auto flex-col items-start align-middle">
               <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
                 <div className="relative m-auto items-center gap-12 lg:inline-flex">
@@ -62,7 +64,7 @@ export const OurClients = () => {
                     </div>
                   </div>
                 </div>
-                <div className="order-first mt-12 block aspect-square w-full lg:order-first lg:mt-0">
+                <div className="order-first block aspect-square w-full lg:order-first lg:mt-0">
                   <img
                     className="mx-auto w-full bg-gray-300 object-cover object-center lg:ml-auto"
                     alt="hero"
@@ -74,7 +76,7 @@ export const OurClients = () => {
           </div>
         </article>
 
-        <article className="relative flex w-full items-center bg-white">
+        <article className="relative flex w-full items-center">
           <div className="relative w-full items-center py-4">
             <div className="relative m-auto flex-col items-start align-middle">
               <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">

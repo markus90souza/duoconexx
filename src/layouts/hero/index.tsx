@@ -3,10 +3,11 @@ import { Container } from '@/components/container'
 import Image from 'next/image'
 
 import hero from '@/assets/hero.png'
+import { WhatsappLogo } from '@phosphor-icons/react'
 
 export function Hero() {
   return (
-    <div className="min-h-[40vh] items-center bg-[#22253f] pt-10 sm:h-[90vh]  sm:pt-16 lg:overflow-hidden lg:pb-14 lg:pt-8">
+    <div className="min-h-[40vh] items-center bg-[#22253f] pt-10 sm:h-[70vh]  sm:pt-16 lg:overflow-hidden lg:pb-14 lg:pt-8">
       <Container>
         <div className="flex flex-1 flex-col gap-x-8 gap-y-6 sm:flex-row">
           <div className="relative max-w-xl">
@@ -27,31 +28,17 @@ export function Hero() {
                 </span>
               </h1>
 
-              {/* <div className="mt-10 sm:mt-12">
-                <form action="#" className="sm:max-w-xl sm:mx-auto lg:mx-0">
-                  <div className="sm:flex">
-                    <div className="min-w-0 flex-1">
-                      <label htmlFor="email" className="sr-only">
-                        Seu email
-                      </label>
-                      <input
-                        id="email"
-                        type="email"
-                        placeholder="seu@email.com"
-                        className="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
-                      />
-                    </div>
-                    <div className="mt-3 sm:mt-0 sm:ml-3">
-                      <button
-                        type="submit"
-                        className="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
-                      >
-                        Entre em contato
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div> */}
+              <div className="mt-8 flex">
+                <div className="inline-flex rounded-md shadow">
+                  <a
+                    href="#"
+                    className="inline-flex items-center justify-center gap-3 rounded-full border border-green-400 bg-transparent px-5 py-3 text-base font-medium text-white hover:bg-green-600"
+                  >
+                    <WhatsappLogo className="h-6 w-6" />
+                    Fale com o consultor
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
           <div className="relative">

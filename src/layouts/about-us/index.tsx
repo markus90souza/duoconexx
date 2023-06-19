@@ -3,8 +3,8 @@ import { Container } from '@/components/container'
 
 export const AboutUs = () => {
   return (
-    <section id="about-us">
-      <Container className="-m-24 rounded-lg bg-white py-24 ">
+    <section id="about-us" className="sm:py32 py-12">
+      <Container className="rounded-lg bg-white py-24 ">
         <Heading
           title="TITULO PARA A SEÇÃO"
           subtitle="Chamada pra acão"
@@ -57,7 +57,7 @@ export const AboutUs = () => {
           </div>
           <div className="relative mx-auto max-w-7xl px-4  sm:px-6 sm:py-12 ">
             <div className="mx-auto max-w-2xl lg:ml-auto lg:mr-0 lg:w-1/2 lg:max-w-none lg:pl-10">
-              <p className="text-2xl font-semibold text-gray-900 sm:text-3xl">
+              <p className="mt-4 max-w-xl text-xl tracking-tight text-gray-600">
                 Nossa solução tem como foco a gestão eficiente da confirmação e
                 lembrete de agendamento de consultas através do Whatsapp de
                 forma automática
@@ -69,7 +69,7 @@ export const AboutUs = () => {
                       dos pacientes respondem mensagem de agendamento pelo
                       Whatsapp
                     </dt>
-                    <dd className="order-1 text-2xl font-extrabold text-indigo-600 sm:text-3xl">
+                    <dd className="order-1 text-2xl font-extrabold text-[#00b8ff] sm:text-3xl">
                       98%
                     </dd>
                   </div>
@@ -77,7 +77,7 @@ export const AboutUs = () => {
                     <dt className="order-2 text-base font-medium text-gray-500">
                       Esse número é de apenas quando o canal é o SMS
                     </dt>
-                    <dd className="order-1 text-2xl font-extrabold text-indigo-600 sm:text-3xl">
+                    <dd className="order-1 text-2xl font-extrabold text-[#00b8ff] sm:text-3xl">
                       04%
                     </dd>
                   </div>
@@ -86,7 +86,7 @@ export const AboutUs = () => {
                       Redução potencial na atividade de confirmação de
                       agendamentos
                     </dt>
-                    <dd className="order-1 text-2xl font-extrabold text-indigo-600 sm:text-3xl">
+                    <dd className="order-1 text-2xl font-extrabold text-[#00b8ff] sm:text-3xl">
                       60%
                     </dd>
                   </div>
