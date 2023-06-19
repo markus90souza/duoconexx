@@ -32,7 +32,7 @@ export function Header() {
     <header>
       <nav>
         <Container className="relative z-50 flex justify-between py-4">
-          <div className="relative z-10 flex items-center gap-16">
+          <div className="relative z-10 flex items-center justify-end gap-16">
             <Link href="/" aria-label="Home">
               <Image className="h-10 w-auto" src={logo} alt="" />
             </Link>

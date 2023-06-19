@@ -1,32 +1,31 @@
-export function CallToAction() {
+import { Container } from '@/components/container'
+import { WhatsappLogo } from '@phosphor-icons/react'
+
+export const CallToAction = () => {
   return (
-    <div className="bg-white">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-16 lg:px-8 lg:py-20">
-        <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-          <span className="block">Ready to dive in?</span>
-          <span className="block text-indigo-600">
-            Start your free trial today.
-          </span>
-        </h2>
-        <div className="mt-8 flex">
-          <div className="inline-flex rounded-md shadow">
-            <a
-              href="#"
-              className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700"
-            >
-              Get started
-            </a>
-          </div>
-          <div className="ml-3 inline-flex">
-            <a
-              href="#"
-              className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-100 px-5 py-3 text-base font-medium text-indigo-700 hover:bg-indigo-200"
-            >
-              Learn more
-            </a>
+    <Container>
+      <div className="mb-12 flex items-center justify-center rounded-3xl bg-[#202422]">
+        <div className=" flex  max-w-7xl flex-col items-center justify-center gap-5 px-4 py-12 sm:px-6  md:py-16 lg:px-8 lg:py-20">
+          <h2 className="flex flex-col items-center gap-4 text-3xl  font-extrabold tracking-tight text-green-400 sm:text-4xl">
+            <span className="block">Pronto para elevar seus atendimentos?</span>
+            <span className="max-w-lg text-center text-2xl text-white">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
+              quo tempore unde dolor
+            </span>
+          </h2>
+          <div className="mt-8 flex">
+            <div className="inline-flex rounded-md shadow">
+              <a
+                href="#"
+                className="inline-flex items-center justify-center gap-3 rounded-full border border-green-400 bg-transparent px-5 py-3 text-base font-medium text-white hover:bg-green-600"
+              >
+                <WhatsappLogo className="h-6 w-6" />
+                Fale com o consultor
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   )
 }

@@ -4,25 +4,16 @@ import { Container } from '@/components/container'
 
 export const OurClients = () => {
   return (
-    <section className="w-full">
+    <section className="w-full py-24">
       <Container>
         <Heading
-          title=" Nossa solução para seu négocio"
-          subtitle="  confirmação automática, antecipada e no mesmo dia. Nossa solução
-        reduzira 50% a chance do seu cliente cancelar em cima da hora e de
-        sua agenda ficar vazia."
+          title="TITULO PARA A SEÇÃO"
+          subtitle="Chamada pra acão"
+          description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis amet
+            voluptate voluptatem sint, in non vel ea autem saepe"
         />
-        {/* <header className="max-w-full flex items-center flex-col py-6 sm:py-10 text-center ">
-          <h2 className="text-5xl font-bold tracking-tight text-black sm:text-4xl">
-            Nossa solução para seu négocio
-          </h2>
-          <span className="max-w-xl block mt-4 text-base tracking-tight text-gray-600">
-            confirmação automática, antecipada e no mesmo dia. Nossa solução
-            reduzira 50% a chance do seu cliente cancelar em cima da hora e de
-            sua agenda ficar vazia.
-          </span>
-        </header> */}
-        <article className="relative flex w-full items-center bg-white">
+
+        <article className="relative flex w-full items-center bg-white pt-12">
           <div className="relative w-full items-center py-4 ">
             <div className="relative m-auto flex-col items-start align-middle">
               <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">

@@ -58,12 +58,13 @@ function classNames(...classes: string[]) {
 
 export function Plans() {
   return (
-    <section>
+    <section className="py-24">
       <Container>
         <Heading
-          title="Planos e Preços"
-          subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit,
-        modi est"
+          title="TITULO PARA A SEÇÃO"
+          subtitle="Chamada pra acão"
+          description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis amet
+            voluptate voluptatem sint, in non vel ea autem saepe"
         />
 
         {/* Tiers */}

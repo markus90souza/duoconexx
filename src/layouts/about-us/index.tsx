@@ -4,27 +4,48 @@ import { Container } from '@/components/container'
 export const AboutUs = () => {
   return (
     <section id="about-us">
-      <Container>
-        <div className="px-6 2xl:container 2xl:mx-auto 2xl:px-20 ">
-          <div className="flex flex-col-reverse items-center justify-center md:flex-row md:items-stretch">
-            <div className="flex flex-col items-center justify-center sm:w-1/2 md:mr-6 md:items-end md:py-20 lg:mr-20 xl:mr-28 xl:w-1/2">
-              <div className="flex flex-col items-center justify-center">
-                <Heading
-                  title="sobre"
-                  subtitle="Nossa solução tem como foco a gestão eficiente da confirmação e lembrete de agendamento de consultas através do Whatsapp de forma automática"
-                />
-                <div className="mt-12 flex flex-col items-center md:mt-14"></div>
+      <Container className="-m-24 rounded-lg bg-white py-24 ">
+        <Heading
+          title="TITULO PARA A SEÇÃO"
+          subtitle="Chamada pra acão"
+          description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis amet
+            voluptate voluptatem sint, in non vel ea autem saepe"
+        />
+
+        <article className="relative flex w-full items-center bg-white pt-12">
+          <div className="relative w-full items-center py-4 ">
+            <div className="relative m-auto flex-col items-start align-middle">
+              <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
+                <div className="relative m-auto items-center gap-12 md:order-first lg:inline-flex">
+                  <div className="max-w-xl text-center lg:text-left">
+                    <div className="max-w-sm">
+                      <p className="mt-4 max-w-xl text-xl tracking-tight text-gray-600">
+                        Nossas soluções tem como foco a gestão eficiente de
+                        mensagens de confirmação de agendamentos , lembretes e
+                        reagendamentos. Tudo de forma automática via Whatsapp
+                        para que você tenha mais tempo para focar no que
+                        realmente importa.
+                      </p>
+
+                      <p className="mt-4 max-w-xl text-xl tracking-tight text-gray-600">
+                        Desenvolvemos soluções de mensageria para facilitar o
+                        dia a dia dos profissionais que trabalham com
+                        agendamentos para aumentar seus lucros
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="order-first mt-12 block aspect-square w-full lg:mt-0">
+                  <img
+                    className="mx-auto w-full bg-gray-300 object-cover object-center lg:ml-auto "
+                    alt="hero"
+                    src="https://d33wubrfki0l68.cloudfront.net/6163c5a4083dab2763aa0f2aa9e6bded23630eb7/935d6/images/placeholders/square2.svg"
+                  />
+                </div>
               </div>
             </div>
-            <div className="order-first mt-12 block aspect-square w-full lg:mt-0">
-              <img
-                className="mx-auto w-full bg-gray-300 object-cover object-center lg:ml-auto "
-                alt="hero"
-                src="https://d33wubrfki0l68.cloudfront.net/6163c5a4083dab2763aa0f2aa9e6bded23630eb7/935d6/images/placeholders/square2.svg"
-              />
-            </div>
           </div>
-        </div>
+        </article>
 
         <div className="relative bg-white">
           <div className="h-56 bg-indigo-600 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
