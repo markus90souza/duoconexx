@@ -3,22 +3,21 @@ import { Container } from '@/components/container'
 import Image from 'next/image'
 
 import phone from '@/assets/phone.png'
+// import { Heading } from '@/components/Heading'
+import { Settings } from 'lucide-react'
 
 export function FeaturesForClients() {
   return (
-    <section className="h-full w-full bg-[#22253F] py-12">
+    <section className="h-full w-full pb-12">
       <Container>
-        <header className="flex max-w-full flex-col items-start py-6 sm:py-8">
-          <h2 className="text-5xl font-bold tracking-tight text-black sm:text-4xl">
-            Nossa solução para seu négocio
-          </h2>
-          <span className="mt-4 block max-w-xl text-base tracking-tight text-gray-600">
-            confirmação automática, antecipada e no mesmo dia. Nossa solução
-            reduzira 50% a chance do seu cliente cancelar em cima da hora e de
-            sua agenda ficar vazia.
-          </span>
-        </header>
-        <div className="relative w-full items-center  py-8 ">
+        {/* <Heading
+          title="TITULO PARA A SEÇÃO"
+          subtitle="Chamada pra acão"
+          description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis amet
+            voluptate voluptatem sint, in non vel ea autem saepe"
+        /> */}
+
+        <div className="relative w-full items-center">
           <div className="grid  grid-cols-1 items-center gap-4 text-left md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
             <div className="relative m-auto items-center gap-12 md:order-first lg:inline-flex">
               <div>
@@ -26,7 +25,13 @@ export function FeaturesForClients() {
                   role="list"
                   className="grid list-none grid-cols-2 gap-4 lg:grid-cols-1 lg:gap-6"
                 >
-                  <li>
+                  <li className="rounded-lg px-4 py-2">
+                    <div>
+                      <span className="inline-flex items-center justify-center rounded-md p-3 ">
+                        <Settings className="h-6 w-6 text-emerald-700" />
+                      </span>
+                    </div>
+
                     <div>
                       <p className="mt-5 text-lg font-medium leading-6 text-black">
                         Mensagem de confirmação
@@ -37,10 +42,16 @@ export function FeaturesForClients() {
                       changing needs.
                     </div>
                   </li>
-                  <li>
+                  <li className="rounded-lg  px-4 py-2">
+                    <div>
+                      <span className="inline-flex items-center justify-center rounded-md p-3 ">
+                        <Settings className="h-6 w-6 text-emerald-700" />
+                      </span>
+                    </div>
+
                     <div>
                       <p className="mt-5 text-lg font-medium leading-6 text-black">
-                        Mensagem de lembrete
+                        Mensagem de confirmação
                       </p>
                     </div>
                     <div className="mt-2 text-base text-gray-500">

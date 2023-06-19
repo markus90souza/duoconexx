@@ -1,3 +1,5 @@
+import { Heading } from '@/components/Heading'
+import { Container } from '@/components/container'
 import { Disclosure } from '@headlessui/react'
 import { ChevronDown } from 'lucide-react'
 
@@ -38,12 +40,16 @@ function classNames(...classes: string[]) {
 
 export function Faqs() {
   return (
-    <div className="bg-gray-50">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-3xl divide-y-2 divide-gray-200">
-          <h2 className="text-center text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Frequently asked questions
-          </h2>
+    <section className="py-12 ">
+      <Container className="rounded-3xl px-12 py-32">
+        <div className="mx-auto  divide-y-2 divide-gray-200">
+          <Heading
+            title="Perguntas frequentes"
+            subtitle="CHAMADA PRA AÇÃO"
+            description=" Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed illo
+          cupiditate magnam culpa excepturi animi"
+          />
+
           <dl className="mt-6 space-y-6 divide-y divide-gray-200">
             {faqs.map((faq) => (
               <Disclosure as="div" key={faq.question} className="pt-6">
@@ -74,7 +80,7 @@ export function Faqs() {
             ))}
           </dl>
         </div>
-      </div>
-    </div>
+      </Container>
+    </section>
   )
 }

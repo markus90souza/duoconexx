@@ -81,15 +81,21 @@ export function Header() {
                         >
                           <div className="space-y-4">
                             <MobileNavLink href="#features">
-                              Features
+                              Quem somos
                             </MobileNavLink>
                             <MobileNavLink href="#reviews">
-                              Reviews
+                              Nossas soluções
                             </MobileNavLink>
                             <MobileNavLink href="#pricing">
-                              Pricing
+                              Planos e Preços
                             </MobileNavLink>
-                            <MobileNavLink href="#faqs">FAQs</MobileNavLink>
+                            <MobileNavLink href="#faqs">
+                              Perguntas frequentes
+                            </MobileNavLink>
+
+                            <MobileNavLink href="#faqs">
+                              Fale conosco
+                            </MobileNavLink>
                           </div>
                         </Popover.Panel>
                       </>

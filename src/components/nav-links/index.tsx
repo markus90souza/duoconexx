@@ -6,9 +6,10 @@ export function NavLinks() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   const navigation = [
-    { name: 'Nossa solução', href: '#' },
     { name: 'Quem Somos', href: '#about-us' },
-    { name: 'Features', href: '#' },
+    { name: 'Nossas Soluções', href: '#our-solutions' },
+    { name: 'Planos e Preços', href: '#plans' },
+    { name: 'Perguntas frequentes', href: '#faqs' },
     { name: 'Fale conosco', href: '#contact-us' },
   ]
 

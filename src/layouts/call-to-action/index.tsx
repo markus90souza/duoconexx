@@ -1,5 +1,4 @@
-/* This example requires Tailwind CSS v2.0+ */
-export function CTA() {
+export function CallToAction() {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-16 lg:px-8 lg:py-20">
